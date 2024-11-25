@@ -1,0 +1,213 @@
+/* General container for the customer profile page */
+.customer-container {
+    padding: 20px;
+    max-width: 600px; /* Reduced width for simplicity */
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Simplified customer detail section */
+.customer-summary {
+    background-color: rgba(208, 231, 255, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Increased shadow size and intensity */
+    text-align: left; /* Align text to the left */
+}
+
+
+.customer-summary p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.details-bullets {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.details-bullets span {
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    margin: 0 2px; /* Adjusted spacing between bullets */
+    transition: color 0.3s;
+}
+
+.details-bullets span:hover {
+    color: #4CAF50;
+}
+
+/* Modal styling */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    width: 60%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Edit icon styling */
+.modal-content .edit-icon {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+.modal-content .edit-icon:hover {
+    color: #0056b3;
+}
+
+.modal-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #aaa;
+    transition: color 0.3s;
+}
+
+.close:hover {
+    color: #333;
+}
+
+/* Form styling with labels to the left */
+.form-group {
+    display: flex; /* Use flex layout */
+    align-items: center; /* Center labels and inputs vertically */
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 1rem;
+    color: #333;
+    width: 150px; /* Fixed width for consistent alignment */
+    margin-right: 10px; /* Space between label and input */
+}
+
+.form-group input {
+    flex: 1; /* Input takes remaining space */
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.save-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.save-btn:hover {
+    background-color: #45a049;
+}
+
+/* Additional Style for Tooltip */
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip-container .tooltip-text {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position above the tooltip container */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip-container .tooltip-text::after {
+    content: '';
+    position: absolute;
+    top: 100%; /* Position the arrow at the bottom */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+    }
+
+    .form-group {
+        flex-direction: column; /* Stack label and input for smaller screens */
+        align-items: flex-start;
+    }
+
+    .form-group label {
+        width: 100%; /* Full width for smaller screens */
+        margin-bottom: 5px;
+    }
+
+    .form-group input {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
+/* Heading Styles */
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: #555;
+}

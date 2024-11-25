@@ -1,0 +1,67 @@
+/* Sidebar Styles */
+.sidebar {
+    width: 60px; /* Initial width to only fit icons */
+    height: 100vh;
+    background-color: rgba(0, 123, 255, 0.7); /* Primary blue color with transparency for glass effect */
+    backdrop-filter: blur(10px); /* Glassmorphism blur effect */
+    padding: 20px;
+    margin-left: -8px;
+    position: relative; /* To position footer properly */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    transition: width 0.3s ease-in-out; /* Smooth transition when expanding or collapsing */
+  }
+  
+  .sidebar.expanded {
+    width: 250px; /* Full width when expanded */
+  }
+  
+  .sidebar.collapsed {
+    width: 60px; /* Smaller width when collapsed */
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar ul li {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px; /* Rounded corners for each list item */
+    margin-bottom: 15px; /* Spacing between items */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    background-color: white; /* Solid white background for each list item */
+    color: black; /* Text color is black to match the white background */
+    border: 2px solid black; /* Add black outline around each list item */
+  }
+  
+  .sidebar ul li:hover {
+    background-color: #f1f1f1; /* Slightly darker background on hover */
+    transform: translateX(5px); /* Slight right shift on hover for animation */
+  }
+  
+  .icon {
+    width: 20px; /* Icon size */
+    height: 20px;
+    margin-right: 10px; /* Space between icon and text */
+    filter: none; /* Remove any color filter to make icons black */
+  }
+  
+  /* Add this for smooth transition when sidebar is collapsed */
+  .sidebar.collapsed .icon {
+    margin-right: 0; /* Remove space between icon and text when collapsed */
+  }
+  
+  /* For the expanded sidebar, show text */
+  .sidebar.expanded ul li {
+    padding-left: 25px; /* Padding to make room for text */
+  }
+  
+  /* Adjust the transition for icons and text visibility */
+  .sidebar.expanded .icon {
+    transition: margin-right 0.3s ease; /* Smooth transition when expanding */
+  }
+  

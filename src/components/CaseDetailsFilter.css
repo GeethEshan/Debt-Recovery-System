@@ -1,0 +1,112 @@
+.case-details-filter {
+    width: 90%;
+    margin: 10px auto 20px auto; /* Adjust margins for consistent spacing */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    backdrop-filter: blur(15px); /* Apply blur effect */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow for effect */
+    color: white;
+  }
+  
+  h3 {
+    margin-top: -10px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #007bff;
+    text-align: center;
+  }
+  
+  .filter-form {
+    display: flex;
+    justify-content: space-between; /* Ensure even distribution of space */
+    gap: 10px; /* Reduced gap between the left and right sections */
+    flex-wrap: wrap; /* Allow wrapping for responsive design */
+  }
+  
+  .left-side, .right-side {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Allow both sides to share space equally */
+  }
+  
+  .left-side {
+    margin-right: 10px; /* Reduced right margin for the left side */
+  }
+  
+  .right-side {
+    margin-left: 10px; /* Reduced left margin for the right side */
+  }
+  
+  .input-field {
+    padding: 12px;
+    width: 100%; /* Full width input fields */
+    max-width: 200px; /* Optional max width to limit the size of inputs */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.3); /* Glass effect */
+    color: black;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(8px); /* Added blur for better visual consistency */
+  }
+  
+  .input-field:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.7);
+  }
+  
+  .date-input {
+    display: flex;
+    align-items: center; /* Vertically center the label and input */
+    margin-bottom: 5px; /* Reduced bottom margin for alignment */
+    width: 100%; /* Ensure date inputs span the full available width */
+  }
+  
+  .date-input label {
+    margin-right: 10px; /* Add some space between label and input */
+    font-size: 0.9rem;
+    color: black;
+    width: 60px; /* Set a fixed width for the labels to align them */
+  }
+  
+  .date-input input {
+    flex-grow: 1; /* Ensure input spans the remaining width */
+    max-width: 200px; /* Optional: Limit the width of the input */
+  }
+  
+  .submit-btn {
+    width: 250px; /* Set width to 70px */
+    height: 40px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0 20px;
+    margin-top: 5px;
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    backdrop-filter: blur(5px);
+  }
+  
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .submit-btn:focus {
+    outline: none;
+  }
+  
+  .submit-btn:active {
+    background-color: #003f7f;
+  }
+  

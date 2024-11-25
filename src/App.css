@@ -1,0 +1,11 @@
+.app {
+  display: flex;
+  flex-direction: column;
+}
+.main-content {
+  display: flex;
+}
+.content {
+  width: 80%;
+  padding: 20px;
+}

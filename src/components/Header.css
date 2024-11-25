@@ -1,0 +1,37 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 123, 255, 0.7);
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .logo-text {
+    margin-left: 10px; /* Increased gap between DRS and logo */
+    text-shadow: 2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black; /* Thicker black outline effect */
+    letter-spacing: 3px; /* Added gap between letters */
+    font-size: 1.5rem; /* Increased font size */
+  }
+  
+  
+  
+  .logo-image {
+    height: 50px; /* Increased height for better visibility */
+    width: auto;
+    margin-left: 20px;
+   
+  }
+  
+  .icons .icon {
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  
